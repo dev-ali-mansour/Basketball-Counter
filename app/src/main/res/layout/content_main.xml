@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout style="@style/verticalLinearLayoutStyle">
+
+        <TextView
+            style="@style/textViewTeamStyle"
+            android:layout_marginEnd="20dp"
+            android:text="@string/team_a" />
+
+        <TextView
+            android:id="@+id/team_a_score_text_view"
+            style="@style/textViewScoreStyle" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:onClick="addThreeForTeamA"
+            android:text="@string/add_3_points" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:onClick="addTwoForTeamA"
+            android:text="@string/add_2_points" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:onClick="addOneForTeamA"
+            android:text="@string/free_throw" />
+
+    </LinearLayout>
+
+    <View style="@style/dividerStyle" />
+
+    <LinearLayout style="@style/verticalLinearLayoutStyle">
+
+        <TextView
+            style="@style/textViewTeamStyle"
+            android:layout_marginStart="20dp"
+            android:text="@string/team_b" />
+
+        <TextView
+            android:id="@+id/team_b_score_text_view"
+            style="@style/textViewScoreStyle" />
+
+
+        <Button
+            style="@style/buttonStyle"
+            android:onClick="addThreeForTeamB"
+            android:text="@string/add_3_points" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:onClick="addTwoForTeamB"
+            android:text="@string/add_2_points" />
+
+        <Button
+            style="@style/buttonStyle"
+            android:onClick="addOneForTeamB"
+            android:text="@string/free_throw" />
+
+    </LinearLayout>
+
+</LinearLayout>
