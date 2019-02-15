@@ -1,4 +1,4 @@
-# BasketballCounter
+# Basketball Counter
 It is a simple demo Android app done as a practice while studying "Android Basics: User Input" course
 
 All files and lines of codes in this project are published for training purpose only. and it is not authorized for commercial use.
